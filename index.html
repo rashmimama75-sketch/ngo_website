@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope & Hands - NGO | Together We Can Create a Better Tomorrow</title>
+    <meta name="description" content="Hope & Hands is a non-profit organization working for the betterment of children, education, health, and the environment worldwide.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER / NAVIGATION
+         ========================================== -->
+    <header class="header">
+        <!-- Top Info Bar -->
+        <div class="top-bar">
+            <div class="container top-bar-container">
+                <div class="top-bar-left">
+                    <a href="tel:+919876543210" class="top-bar-item">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43210
+                    </a>
+                    <a href="mailto:info@hopefoundation.org" class="top-bar-item">
+                        <i class="fa-solid fa-envelope"></i> info@hopefoundation.org
+                    </a>
+                    <div class="top-bar-item">
+                        <i class="fa-solid fa-location-dot"></i> Bhubaneswar, Odisha, India
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <span class="follow-label">Follow Us:</span>
+                    <div class="top-socials">
+                        <a href="javascript:void(0)" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="javascript:void(0)" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="logo">
+                <img src="assets/images/logo.svg" alt="ADVANCX SOLUTION Logo" class="brand-logo-img">
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#causes" class="nav-link">Our Causes</a>
+                <a href="#stories" class="nav-link">Our Impact</a>
+
+                <div class="nav-dropdown">
+                    <a href="#get-involved" class="nav-link">Get Involved <i class="fa-solid fa-angle-down" style="font-size: 0.75rem; margin-left: 0.2rem;"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="javascript:void(0)" onclick="openModal('donateModal')" class="nav-dropdown-item"><i class="fa-solid fa-heart-pulse"></i> Make a Donation</a>
+                        <a href="javascript:void(0)" onclick="openModal('volunteerModal')" class="nav-dropdown-item"><i class="fa-solid fa-hands-holding-child"></i> Become a Volunteer</a>
+                        <a href="#get-involved" class="nav-dropdown-item"><i class="fa-solid fa-bullhorn"></i> Start Fundraiser</a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+
+            <!-- Action Controls -->
+            <div class="nav-actions">
+
+                <button class="btn btn-primary" onclick="openModal('donateModal')">
+                    Donate Now <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-tag"><i class="fa-solid fa-seedling"></i> Together We Can</span>
+                </div>
+                <h1 class="hero-title">
+                    Create a Better <br>
+                    <span class="highlight-script">Tomorrow</span>
+                </h1>
+                <p class="hero-desc">
+                    We are a non profit organization working for the betterment of children, education, health, and the environment worldwide.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#causes" class="btn btn-primary">
+                        Explore Our Causes <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button class="btn btn-secondary" onclick="openModal('videoModal')">
+                        <i class="fa-solid fa-circle-play" style="color: var(--primary); font-size: 1.2rem;"></i> Watch Our Video
+                    </button>
+                </div>
+
+                <!-- Supporter Avatars Social Proof -->
+                <div class="hero-social-proof">
+                    <div class="avatar-group">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Supporter 1">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Supporter 2">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Supporter 3">
+                        <div class="avatar-more">1K+</div>
+                    </div>
+                    <div class="social-proof-text">
+                        <strong>Join 1,000+ people</strong> who are making a difference today.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image Box & Floating Card -->
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/hero_children.png" alt="Happy Smiling Children">
+                </div>
+
+                <div class="hero-floating-card">
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-hands-holding-heart"></i>
+                    </div>
+                    <div class="floating-content">
+                        <h4>Make a Difference</h4>
+                        <p>Every contribution helps us bring hope and change lives.</p>
+                        <button class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;" onclick="openModal('donateModal')">
+                            Donate Now <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CORE FOCUS AREAS (PILL BAR)
+         ========================================== -->
+    <section class="focus-section">
+        <div class="container">
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="focus-info">
+                        <h3>Child Education</h3>
+                        <p>Providing quality education for a brighter future.</p>
+                    </div>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="focus-info">
+                        <h3>Healthcare Support</h3>
+                        <p>Ensuring access to essential healthcare for all.</p>
+                    </div>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="focus-info">
+                        <h3>Environmental Care</h3>
+                        <p>Protecting nature for a sustainable tomorrow.</p>
+                    </div>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="focus-info">
+                        <h3>Community Development</h3>
+                        <p>Empowering communities for a better life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT US & IMPACT STATS
+         ========================================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="badge-tag">About Us</span>
+                    <h2>We're In A Mission To Help The Helpless</h2>
+                    <p>We believe every individual deserves a chance to live with dignity and hope. Our mission is to create sustainable change in the lives of those who need it the most through transparent initiatives and community support.</p>
+                    <a href="#get-involved" class="btn btn-primary" onclick="openModal('volunteerModal')">
+                        Learn More About Us <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Video Frame -->
+                <div class="about-video-box">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&auto=format&fit=crop&q=80" alt="Volunteers Planting Trees">
+                    <div class="play-btn-overlay" onclick="openModal('videoModal')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Counter Grid -->
+            <div class="stats-counter-grid" id="stats">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Lives Impacted</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Active Volunteers</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-earth-asia"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Communities Reached</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         AREAS WE WORK ON (CAUSES)
+         ========================================== -->
+    <section class="causes-section" id="causes">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <span class="badge-tag">Our Causes</span>
+                    <h2 class="section-title">Areas We Work On</h2>
+                </div>
+                <a href="#causes" class="link-arrow" onclick="showToast('Showing all active humanitarian causes!')">
+                    View All Causes <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="causes-grid">
+                <!-- Cause Card 1 -->
+                <div class="cause-card">
+                    <div class="cause-img-box">
+                        <img src="assets/images/cause_education.png" alt="Education for All">
+                        <div class="cause-badge-icon green">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="cause-content">
+                        <h3 class="cause-title">Education for All</h3>
+                        <p class="cause-desc">Help children get access to quality education, books, and essential school supplies.</p>
+                        <div class="cause-progress-wrapper">
+                            <div class="cause-progress-bar">
+                                <div class="cause-progress-fill" style="width: 82%;"></div>
+                            </div>
+                            <div class="cause-progress-stats">
+                                <span>Raised: ₹41,000</span>
+                                <span>Goal: ₹50,000</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" style="width: 100%; justify-content: space-between;" onclick="openModal('donateModal')">
+                            Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cause Card 2 -->
+                <div class="cause-card">
+                    <div class="cause-img-box">
+                        <img src="assets/images/cause_healthcare.png" alt="Healthcare for All">
+                        <div class="cause-badge-icon orange">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                    </div>
+                    <div class="cause-content">
+                        <h3 class="cause-title">Healthcare for All</h3>
+                        <p class="cause-desc">Support medical care, vaccination drives, and health awareness programs in rural areas.</p>
+                        <div class="cause-progress-wrapper">
+                            <div class="cause-progress-bar">
+                                <div class="cause-progress-fill" style="width: 68%;"></div>
+                            </div>
+                            <div class="cause-progress-stats">
+                                <span>Raised: ₹34,000</span>
+                                <span>Goal: ₹50,000</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" style="width: 100%; justify-content: space-between;" onclick="openModal('donateModal')">
+                            Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cause Card 3 -->
+                <div class="cause-card">
+                    <div class="cause-img-box">
+                        <img src="assets/images/cause_environment.png" alt="Save Environment">
+                        <div class="cause-badge-icon green">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                    </div>
+                    <div class="cause-content">
+                        <h3 class="cause-title">Save Environment</h3>
+                        <p class="cause-desc">Join hands to protect our planet, plant trees, and restore natural water ecosystems.</p>
+                        <div class="cause-progress-wrapper">
+                            <div class="cause-progress-bar">
+                                <div class="cause-progress-fill" style="width: 90%;"></div>
+                            </div>
+                            <div class="cause-progress-stats">
+                                <span>Raised: ₹45,000</span>
+                                <span>Goal: ₹50,000</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" style="width: 100%; justify-content: space-between;" onclick="openModal('donateModal')">
+                            Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cause Card 4 -->
+                <div class="cause-card">
+                    <div class="cause-img-box">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&auto=format&fit=crop&q=80" alt="Empower Communities">
+                        <div class="cause-badge-icon yellow">
+                            <i class="fa-solid fa-people-carry-box"></i>
+                        </div>
+                    </div>
+                    <div class="cause-content">
+                        <h3 class="cause-title">Empower Communities</h3>
+                        <p class="cause-desc">Empowering underprivileged youth and women through skill development and micro-grants.</p>
+                        <div class="cause-progress-wrapper">
+                            <div class="cause-progress-bar">
+                                <div class="cause-progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <div class="cause-progress-stats">
+                                <span>Raised: ₹37,500</span>
+                                <span>Goal: ₹50,000</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" style="width: 100%; justify-content: space-between;" onclick="openModal('donateModal')">
+                            Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         STORIES OF CHANGE
+         ========================================== -->
+    <section class="stories-section" id="stories">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <span class="badge-tag">Stories of Change</span>
+                    <h2 class="section-title">Real Stories. Real Impact.</h2>
+                </div>
+                <a href="#stories" class="link-arrow" onclick="showToast('Loading full story gallery...')">
+                    View All Stories <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="stories-grid">
+                <!-- Story Card 1 -->
+                <div class="story-card">
+                    <div class="story-img-box">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80" alt="Girl in School">
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag">Education</span>
+                        <h3 class="story-title">From Dreams to Success</h3>
+                        <p class="story-desc">Thanks to your support, Riya got access to quality education and is now pursuing her dream of becoming a science teacher.</p>
+                        <a href="javascript:void(0)" onclick="showToast('📖 Reading Riya’s full inspirational journey.')" class="link-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story Card 2 -->
+                <div class="story-card">
+                    <div class="story-img-box">
+                        <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80" alt="Medical Camp">
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag" style="color: var(--accent);">Healthcare</span>
+                        <h3 class="story-title">A New Lease on Life</h3>
+                        <p class="story-desc">Your contributions helped provide vital surgery treatment to Ramesh, giving him a second chance at a healthy, happy life.</p>
+                        <a href="javascript:void(0)" onclick="showToast('📖 Reading Ramesh’s recovery story.')" class="link-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story Card 3 -->
+                <div class="story-card">
+                    <div class="story-img-box">
+                        <img src="assets/images/cause_environment.png" alt="Planting Trees">
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag" style="color: var(--primary-light);">Environment</span>
+                        <h3 class="story-title">Planting Hope for Future</h3>
+                        <p class="story-desc">Together with local youth, we planted over 10,000 trees across 12 villages, building a greener, cooler ecosystem.</p>
+                        <a href="javascript:void(0)" onclick="showToast('📖 Reading Green Earth initiative report.')" class="link-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================
+         GET INVOLVED BANNER
+         ========================================== -->
+    <section class="get-involved-section" id="get-involved">
+        <div class="container">
+            <div class="get-involved-card">
+                <div class="involved-text">
+                    <span class="badge-tag" style="background: rgba(255,255,255,0.15); color: #fff;">Get Involved</span>
+                    <h2>Be the Change</h2>
+                    <p>Small actions can create a big impact. Join us in building a better, brighter, and more equitable tomorrow.</p>
+                    <button class="btn btn-secondary" onclick="openModal('volunteerModal')">
+                        Join Us Today <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="involved-grid">
+                    <div class="involved-item" onclick="openModal('donateModal')">
+                        <div class="involved-icon">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h4>Donate</h4>
+                        <p>Your donation helps bring hope and change lives.</p>
+                    </div>
+                    <div class="involved-item" onclick="openModal('volunteerModal')">
+                        <div class="involved-icon">
+                            <i class="fa-solid fa-hands-clapping"></i>
+                        </div>
+                        <h4>Volunteer</h4>
+                        <p>Give your time and skills to support causes.</p>
+                    </div>
+                    <div class="involved-item" onclick="showToast('📢 Fundraiser tool launching! Create your campaign.')">
+                        <div class="involved-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h4>Fundraise</h4>
+                        <p>Start a fundraiser & inspire others to make a difference.</p>
+                    </div>
+                    <div class="involved-item" onclick="showToast('🌐 Thanks for sharing! Link copied to clipboard.')">
+                        <div class="involved-icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h4>Spread Word</h4>
+                        <p>Share our mission to reach more people in need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         NEWSLETTER SECTION
+         ========================================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-illustration">
+                    <div class="envelope-icon-large">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div class="newsletter-text">
+                        <h3>Subscribe to our newsletter</h3>
+                        <p>Stay updated with our latest news, impact stories, and upcoming campaigns.</p>
+                    </div>
+                </div>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <img src="assets/images/logo_white.svg" alt="ADVANCX SOLUTION Logo" class="brand-logo-img footer-logo-img">
+                    </a>
+                    <p class="footer-desc">
+                        Together, we can create a world where everyone has the opportunity to live a healthy, educated, and empowered life.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#about">About Us</a>
+                        <a href="#causes">Our Causes</a>
+                        <a href="#stories">Our Impact</a>
+
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Get Involved -->
+                <div>
+                    <h4 class="footer-heading">Get Involved</h4>
+                    <div class="footer-links">
+                        <a href="javascript:void(0)" onclick="openModal('donateModal')">Donate Now</a>
+                        <a href="javascript:void(0)" onclick="openModal('volunteerModal')">Become a Volunteer</a>
+                        <a href="#get-involved">Fundraise</a>
+                        <a href="#contact">Partner With Us</a>
+                    </div>
+                </div>
+
+                <!-- Contact Us & Payments -->
+                <div>
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91 12345 67890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@hopeandhands.org</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Hope Street, New Delhi, India - 110001</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <span style="font-size: 0.8rem; color: rgba(255,255,255,0.6);">We Accept:</span>
+                        <div class="payment-badges">
+                            <span class="payment-badge">VISA</span>
+                            <span class="payment-badge">MC</span>
+                            <span class="payment-badge">PayPal</span>
+                            <span class="payment-badge">UPI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hope & Hands. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="javascript:void(0)">Privacy Policy</a>
+                    <a href="javascript:void(0)">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         MODAL 1: DONATION MODAL
+         ========================================== -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Make a Donation ❤️</h3>
+                <span class="modal-close" onclick="closeModal('donateModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label class="form-label">Select Cause</label>
+                        <select class="form-control" required>
+                            <option value="education">Child Education</option>
+                            <option value="healthcare">Healthcare Support</option>
+                            <option value="environment">Save Environment</option>
+                            <option value="community">Community Empowerment</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Select Amount (INR)</label>
+                        <div class="donation-presets">
+                            <div class="preset-btn" data-val="500">₹500</div>
+                            <div class="preset-btn active" data-val="1000">₹1,000</div>
+                            <div class="preset-btn" data-val="2500">₹2,500</div>
+                            <div class="preset-btn" data-val="5000">₹5,000</div>
+                        </div>
+                        <input type="number" id="customAmountInput" class="custom-amount-input" placeholder="Or enter custom amount (₹)">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Your Full Name</label>
+                        <input type="text" class="form-control" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Payment Method</label>
+                        <select class="form-control" required>
+                            <option value="card">Credit / Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="upi">UPI / Net Banking</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.75rem; padding: 0.65rem 1rem; font-size: 0.95rem;">
+                        Donate <span id="donationAmountDisplay">₹1,000</span> Now <i class="fa-solid fa-heart"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MODAL 2: VIDEO PLAYER MODAL
+         ========================================== -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-container" style="max-width: 720px; background: #000;">
+            <div class="modal-header" style="background: #111;">
+                <h3>Hope & Hands Impact Video 🎥</h3>
+                <span class="modal-close" onclick="closeModal('videoModal')">&times;</span>
+            </div>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border:0;" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" 
+                        title="NGO Impact Video" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MODAL 3: VOLUNTEER REGISTRATION MODAL
+         ========================================== -->
+    <div class="modal-overlay" id="volunteerModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Become a Volunteer 🤝</h3>
+                <span class="modal-close" onclick="closeModal('volunteerModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="volunteerForm">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Jane Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="jane@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Area of Help</label>
+                        <select class="form-control" required>
+                            <option value="teaching">Teaching & Tutoring Children</option>
+                            <option value="medical">Medical & Health Camps</option>
+                            <option value="tree">Tree Plantation & Eco-drives</option>
+                            <option value="fundraising">Event & Fundraising Support</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1rem;">
+                        Submit Volunteer Application <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
